@@ -1,13 +1,11 @@
 <?php
 
+require __DIR__ . ("/../vendor/autoload.php");
+
 require __DIR__ . '/../src/StringUtils.php';
 
-if (StringUtils\capitalize('hello') !== 'Hello') {
-    throw new \Exception('Функция работает неверно!');
-}
+use function StringUtils\capitalize;
+use Webmozart\Assert\Assert;
 
-if (StringUtils\capitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-}
-
-echo 'Все тесты пройдены';
+Assert::eq(capitalize('hello'), 'Hello');
+Assert::eq(capitalize(''), '');

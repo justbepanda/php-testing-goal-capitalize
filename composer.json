@@ -1,0 +1,18 @@
+{
+    "name": "mof/php-testing-goal-capitalize",
+    "autoload": {
+        "psr-4": {
+            "Mof\\PhpTestingGoalCapitalize\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "justbepanda",
+            "email": "justbepanda@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "webmozart/assert": "1.10.0"
+    },
+    "require": {}
+}
