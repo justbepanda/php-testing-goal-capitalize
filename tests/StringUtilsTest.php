@@ -1,15 +1,13 @@
 <?php
 
-require_once __DIR__ . '/../src/StringUtils.php';
-
-use function StringUtils\capitalize;
+require __DIR__ . '/../src/StringUtils.php';
 
 if (StringUtils\capitalize('hello') !== 'Hello') {
     throw new \Exception('Функция работает неверно!');
 }
 
 if (StringUtils\capitalize('') !== '') {
-    throw new \Exception('Функция работает неаверно!');
+    throw new \Exception('Функция работает неверно!');
 }
 
 echo 'Все тесты пройдены';
